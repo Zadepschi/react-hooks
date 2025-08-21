@@ -11,6 +11,7 @@ function PreviousCount() {
 
     return (
         <div className="back">
+            <h2>useRef previous</h2>
            <p>Current state: {count}</p>
            <p>Previous state:{previousCount}</p>
            <button onClick={() => setCount(count +1)}>Click here</button>
