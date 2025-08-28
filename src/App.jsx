@@ -4,10 +4,20 @@ import PreviousCount from './PreviousCount';
 import Play from './Play';
 import Reducer from './Reducer';
 import Stopwatch from './Stopwatch';
+import ComponentOne from './ComponentOne';
+import ComponentTwo from './ComponentTwo';
+import { Context } from './Context';
+import ColorChange, { ColorContext } from './ColorChange';
+import MyTheme from './MyTheme';
+import MyTheme2 from './MyTheme2';
+import Memo from './Memo';
 
 function App() {
   const [city, setCity] = useState('');
   const inputRef = useRef();
+  const [context, setContext] = useState("Первоначальное состояние");
+  
+  const [myColor, setMyColor] = useState(true);
 
   const focus = () => {
     inputRef.current.focus()
@@ -28,9 +38,18 @@ function App() {
         <Reducer/>
         <Stopwatch/>
 
-          
+        <Context.Provider value={[context, setContext]}>
+            <ComponentOne/>
+            <ComponentTwo/>
+        </Context.Provider>
+        <ColorContext.Provider value={[myColor, setMyColor]}>
+          <ColorChange/>
+          <MyTheme/>
+          <MyTheme2/>
+        </ColorContext.Provider>
+        <Memo/>
     </div>
   )
 }
 
-export default App
+export default App;

@@ -33,6 +33,18 @@ body {
    width: 200px;
     margin: 5px;
 }
+.context1 {
+   background-color: rgb(207, 145, 248);
+  padding: 2px 20px;
+   width: 200px;
+    margin: 5px;
+}
+.context2 {
+   background-color: rgb(122, 245, 91);
+  padding: 2px 20px;
+   width: 200px;
+    margin: 5px;
+}
 .backSong {
    background-color: rgb(195, 242, 253);
   padding: 2px 20px;
@@ -43,6 +55,27 @@ body {
    background-color: rgb(248, 206, 234);
   padding: 2px 20px;
    width: 200px;
+    margin: 5px;
+}
+.colorChange {
+     background-color: rgb(248, 217, 113);
+  padding: 2px 20px;
+   width: 200px;
+    margin: 5px;
+}
+.memo {
+       background-color: rgb(132, 214, 247);
+  padding: 2px 20px;
+   width: 200px;
+    margin: 5px;
+}
+.myTheme {
+
+   width: 200px;
+    margin: 5px;
+}
+.myTheme2 {
+     width: 200px;
     margin: 5px;
 }
 button {
